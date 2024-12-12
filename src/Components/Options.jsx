@@ -134,22 +134,22 @@ function Options() {
                                 ))}
                             </div>
                         </div>
-                        <div className="flex-col w-78 h-[42vh] py-6 place-items-center">
+                        <div className="flex-col w-auto h-[40vh] place-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg"fill="none" 
                             viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
-                            className="size-6 w-40 h-40 fill-green-500 stroke-green-500">
+                            className="size-6 w-24 h-24 fill-green-500 stroke-green-500">
                             <path strokeLinecap="round" strokeLinejoin="round" 
                             d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 
                             0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                             </svg>
-                            <div className="flex items-center justify-start px-2 w-[80%] font-[500] mt-2 h-10 bg-gray-300">
+                            <div className="flex items-center justify-start px-2 w-[60%] font-[500] mt-1 h-8 bg-gray-300">
                                 {state.username.toUpperCase()}
                             </div>
-                            <div className="h-12 w-[50%] mt-3">
+                            <div className="h-12 w-[40%] mt-3">
                                 <button className="bg-blue-600 text-white text-lg font-[500] hover:bg-blue-300 rounded-2xl w-full h-full">Get Started</button>
                             </div>
                         </div>
-                        <div className="flex-col w-full place-items-center items-center py-6 h-full ">
+                        <div className="flex-col w-full place-items-center items-center h-full ">
                             <div className="line flex justify-center w-full font-[500]">
                                 <h3>Mode</h3>
                             </div>
@@ -198,7 +198,7 @@ function Options() {
                             <div className="flex justify-center w-full text-[400] items-center py-2 ins">
                                 <h3>Instructions</h3>
                             </div>
-                            <div className="btn flex justify-center items-center text-gray-100 text-lg py-2 w-[70%] h-14">
+                            <div className="btn flex justify-center items-center text-gray-100 text-lg py-2 w-[60%] h-12">
                                 <button className="flex w-full h-full justify-center rounded-3xl items-center bg-green-500">Check To View</button>
 
                             </div>
