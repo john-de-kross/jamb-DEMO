@@ -95,11 +95,11 @@ function Options() {
                             </div>
                         ))}
                     </div>
-                    <div className="grid grid-cols-3 w-full">
+                    <div className="grid grid-cols-3 w-full py-3">
                         <div className="partion w-80 mx-4 h-64 overflow-auto">
                             <div className="chosenSubjects flex-col">
                                 {state.chosenSubjects.map((item) =>(
-                                    <div key={item.id} className="subject h-auto py-2 w-full bg-green-500 border-b-8 border-x-white flex-col">
+                                    <div key={item.id} className="subject h-auto py-2 w-78 bg-green-500 border-b-8 border-x-white flex-col">
                                         <div className="flex gap-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" 
                                             fill="none" viewBox="0 0 24 24"
@@ -193,13 +193,6 @@ function Options() {
                                     <input type="checkbox" name="" id="" />
                                     <h3>Options</h3>
                                 </div>
-
-                            </div>
-                            <div className="flex justify-center w-full text-[400] items-center py-2 ins">
-                                <h3>Instructions</h3>
-                            </div>
-                            <div className="btn flex justify-center items-center text-gray-100 text-lg py-2 w-[60%] h-12">
-                                <button className="flex w-full h-full justify-center rounded-3xl items-center bg-green-500">Check To View</button>
 
                             </div>
                         </div>
