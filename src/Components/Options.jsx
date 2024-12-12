@@ -96,10 +96,10 @@ function Options() {
                         ))}
                     </div>
                     <div className="grid grid-cols-3 w-full">
-                        <div className="partion w-auto mx-4 h-64 overflow-auto">
+                        <div className="partion w-80 mx-4 h-64 overflow-auto">
                             <div className="chosenSubjects flex-col">
                                 {state.chosenSubjects.map((item) =>(
-                                    <div key={item.id} className="subject h-auto py-2 w-fit bg-green-500 border-b-8 border-x-white flex-col">
+                                    <div key={item.id} className="subject h-auto py-2 w-full bg-green-500 border-b-8 border-x-white flex-col">
                                         <div className="flex gap-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" 
                                             fill="none" viewBox="0 0 24 24"
