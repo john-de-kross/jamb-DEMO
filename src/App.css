@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.password input, .user-input input::placeholder{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+}
+
+.dot span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 15px 0;
+    animation: appear 1.5s infinite;
+}
+
+.dot span:nth-child(1){
+
+    animation-delay: 0s;
+    
+
+}
+.dot span:nth-child(2){
+    animation-delay: 0.3s;
+    
+
+}
+.dot span:nth-child(3){
+    animation-delay: 0.6s;
+    
+}
+
+
+@keyframes appear{
+    0%{
+        opacity: 0.5;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0.5;
+        transform: scale(0);
+    }
+}
+
+.hr{
+    position: relative;
+}
+
+.hr h3::before,
+.hr h3::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 38%;
+    background-color: gray;
+    margin: 0, 10px;
+}
+
+.hr h3::before{
+    left: 20px;
+
+}
+
+.hr h3::after{
+    right: 20px;
+}
+
+.subject_opt{
+    font-weight: 500;
+}
+
+.line{
+    position: relative;
+}
+
+.line h3::before,
+.line h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.line h3::before{
+    left: 8%;
+}
+
+.line h3::after{
+    right: 8%;
+}
+
+.time{
+    position: relative;
+}
+
+.time h3::before,
+.time h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 10px;
+
+}
+
+
+.time h3::before{
+    left: 15%;
+}
+
+.time h3::after{
+    right: 15%;
+}
+
+.shuffle{
+    position: relative;
+}
+
+.shuffle h3::before,
+.shuffle h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 10px;
+
+}
+
+.shuffle h3::before{
+    left: 12%;
+}
+
+.shuffle h3::after{
+    right: 12%;
+}
+
+    
+.ins{
+    position: relative;
+}
+.ins h3::before,
+.ins h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 1px;
+    background-color: gray;
+    margin: 1px 10px;
+
+}
+
+.ins h3::before{
+    left: 8%;
+}
+
+.ins h3::after{
+    right: 8%;
+}
+
+    
+
