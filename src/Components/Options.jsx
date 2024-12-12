@@ -96,7 +96,7 @@ function Options() {
                         ))}
                     </div>
                     <div className="grid grid-cols-3 w-full">
-                        <div className="partion w-80 mx-4 h-80">
+                        <div className="partion w-80 mx-4 h-80 overflow-auto">
                             <div className="chosenSubjects flex-col">
                                 {state.chosenSubjects.map((item) =>(
                                     <div key={item.id} className="subject h-[11vh] py-2 w-fit bg-green-500 border-b-8 border-x-white flex-col">
