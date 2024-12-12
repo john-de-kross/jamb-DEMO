@@ -96,21 +96,21 @@ function Options() {
                         ))}
                     </div>
                     <div className="grid grid-cols-3 w-full">
-                        <div className="partion w-80 mx-4 h-80 overflow-auto">
+                        <div className="partion w-auto mx-4 h-64 overflow-auto">
                             <div className="chosenSubjects flex-col">
                                 {state.chosenSubjects.map((item) =>(
-                                    <div key={item.id} className="subject h-[11vh] py-2 w-fit bg-green-500 border-b-8 border-x-white flex-col">
+                                    <div key={item.id} className="subject h-auto py-2 w-fit bg-green-500 border-b-8 border-x-white flex-col">
                                         <div className="flex gap-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" 
                                             fill="none" viewBox="0 0 24 24"
                                             strokeWidth={1.5} stroke="currentColor" className="size-6  stroke-gray-300">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                             </svg>
-                                            <h2 className="text-lg font-[500] text-gray-100">{item.subject}</h2>
+                                            <h2 className="font-[400] text-gray-100">{item.subject}</h2>
                                         </div>
                                         <div className="flex flex-nowrap px-2 relative text-white justify-between">
                                             {isEdit[item.id] ? (
-                                                <div className="flex gap-2 px-2 text-base font-[400] items-center">
+                                                <div className="flex gap-2 px-2 text-base font-[300] items-center">
                                                     <select onChange={(e) =>getYear(e, item)} className="flex justify-center outline-none bg-gray-300 text-black font-medium" name="" id="">
                                                        {item.year.map((year, index) => (
                                                         <option key={index} value={year}>{year}</option>
@@ -126,7 +126,7 @@ function Options() {
                                                     <h3>Questions</h3>
                                                 </div>
                                             ):  <p className="px-5">{item.selected_year} Model | {item.selected_no} questions</p>}
-                                            <button onClick={() => toggleEditBtn(item.id)} className="w-10 flex justify-center hover:bg-slate-200 items-center rounded-xl text-sm font-normal bottom-3 h-10  text-black bg-white">
+                                            <button onClick={() => toggleEditBtn(item.id)} className="w-7 flex justify-center hover:bg-slate-200 text-sm items-center rounded-xl font-normal bottom-3 h-7  text-black bg-white">
                                                 {isEdit[item.id] ? 'Save' : 'Edit'}
                                             </button>
                                         </div>
