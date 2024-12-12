@@ -145,8 +145,8 @@ function Options() {
                             <div className="flex items-center justify-start px-2 w-[70%] font-[500] mt-1 h-8 bg-gray-300">
                                 {state.username.toUpperCase()}
                             </div>
-                            <div className="h-12 w-[40%] mt-3">
-                                <button className="bg-blue-600 text-white text-lg font-[500] hover:bg-blue-300 rounded-2xl w-full h-full">Get Started</button>
+                            <div className="h-12 py-3 w-[40%] mt-3">
+                                <button className="bg-blue-600 text-white text-lg font-[400] hover:bg-blue-300 rounded-2xl w-full h-10">Get Started</button>
                             </div>
                         </div>
                         <div className="flex-col w-full place-items-center items-center h-full ">
