@@ -154,15 +154,15 @@ function Options() {
                                 <h3>Mode</h3>
                             </div>
                             <div className="flex justify-center items-center w-full h-14">
-                                <select className="flex justify-center w-72 font-semibold outline-none items-center text-sm h-10 bg-gray-200" name="" id="">
-                                    <option value="practice">Practice</option>
+                                <select className="flex justify-center w-60 flex-wrap font-[500] outline-none items-center text-sm h-8 bg-gray-200" name="" id="">
+                                    <option className="" value="practice">Practice</option>
                                     <option value="real_exam">Get timed, <br />view result and get correction</option>
                                 </select>
                             </div>
                             <div className="flex w-full justify-center items-center time">
                                 <h3>Total Time</h3>
                             </div>
-                            <div className="flex justify-between items-center rounded bg-white border-2 border-x-gray-400 border-y-gray-400 time-selector w-60 h-9">
+                            <div className="flex justify-between items-center rounded bg-white border-2 border-x-gray-400 border-y-gray-400 time-selector w-56 h-8">
                                 <div className="flex w-full justify-between">
                                     <h3 className="px-2 font-[400]">0{state.timer}:00:00</h3>
                                     <div className="flex-col place-items-center">
